@@ -1,0 +1,124 @@
+/* ================================
+   ESTILOS GERAIS
+================================ */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #ffcc00;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+main {
+  padding: 120px 20px 80px;
+  flex: 1;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* ================================
+   INDEX :)
+================================ */
+body.index {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+body.index main h2 { color: #00ffcc; }
+
+/* ================================
+   PASSO 1 - Introdução:)
+================================ */
+body.passo1 {
+  background: radial-gradient(circle, #ff512f, #dd2476);
+}
+body.passo1 main h2 { color: #ffe066; }
+
+/* ================================
+   PASSO 2 - Serviços
+================================ */
+body.passo2 {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+body.passo2 main h2 { color: #333; }
+
+/* ================================
+   PASSO 3 - Armazenamento
+================================ */
+body.passo3 {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+body.passo3 main h2 { color: #ffeb3b; }
+
+/* ================================
+   PASSO 4 - Segurança
+================================ */
+body.passo4 {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+body.passo4 main h2 { color: #222; }
+
+/* ================================
+   PASSO 5 - Escalabilidade
+================================ */
+body.passo5 {
+  background: linear-gradient(135deg, #654ea3, #eaafc8);
+}
+body.passo5 main h2 { color: #ffddff; }
