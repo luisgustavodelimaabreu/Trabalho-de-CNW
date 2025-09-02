@@ -66,5 +66,31 @@
     <p>&copy; 2025 - Pesquisa AWS</p>
     </footer>
 
+    <script>
+    // Mostrar/esconder o botão ao rolar a página
+    window.onscroll = function() {
+      let btn = document.getElementById("topoBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+ 
+    document.getElementById("topoBtn").addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+
+    document.querySelectorAll("h2").forEach(h2 => {
+      h2.addEventListener("click", () => {
+        let conteudo = h2.nextElementSibling;
+        conteudo.style.display = conteudo.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
 </body>
+
 </html>
