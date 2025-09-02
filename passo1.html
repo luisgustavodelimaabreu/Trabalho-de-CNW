@@ -8,7 +8,7 @@
 </head>
 <body class="passo1">
   <header>
-    <h1>🔑 AWS - Passo 1</h1>
+    <h1>AWS-Passo 1</h1>
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -53,48 +53,57 @@
   </footer>
 
 
-  <button id="modo">🌙 Modo Escuro(trevas kkkkkk)</button>
+<button id="modo">Dark</button>
+<div id="relogio" style="margin:20px; font-size:18px;"></div>
 
-  <script>
-    const btnModo = document.getElementById("modo");
+<script>
+  const btnModo = document.getElementById("modo");
 
+  btnModo.style.position = "fixed";
+  btnModo.style.bottom = "20px";
+  btnModo.style.right = "20px";
+  btnModo.style.padding = "10px 16px";
+  btnModo.style.border = "1px solid #ccc";
+  btnModo.style.borderRadius = "6px";
+  btnModo.style.background = "#fff";
+  btnModo.style.color = "#333";
+  btnModo.style.fontSize = "15px";
+  btnModo.style.cursor = "pointer";
+  btnModo.style.transition = "all 0.2s ease";
+  btnModo.style.zIndex = "1000";
 
-    btnModo.style.position = "fixed";
-    btnModo.style.bottom = "20px";
-    btnModo.style.right = "20px";
-    btnModo.style.padding = "12px 18px";
-    btnModo.style.border = "none";
-    btnModo.style.borderRadius = "8px";
-    btnModo.style.background = "linear-gradient(45deg, #4b6cb7, #182848)";
-    btnModo.style.color = "white";
-    btnModo.style.fontSize = "16px";
-    btnModo.style.cursor = "pointer";
-    btnModo.style.boxShadow = "0 4px 6px rgba(0,0,0,0.3)";
-    btnModo.style.transition = "all 0.3s ease";
-    btnModo.style.zIndex = "1000";
+  btnModo.addEventListener("mouseover", () => {
+    btnModo.style.background = "#f0f0f0";
+  });
 
-    btnModo.addEventListener("mouseover", () => {
-      btnModo.style.transform = "scale(1.1)";
-      btnModo.style.boxShadow = "0 6px 8px rgba(0,0,0,0.4)";
-    });
+  btnModo.addEventListener("mouseout", () => {
+    btnModo.style.background = "#fff";
+  });
 
-    btnModo.addEventListener("mouseout", () => {
-      btnModo.style.transform = "scale(1)";
-      btnModo.style.boxShadow = "0 4px 6px rgba(0,0,0,0.3)";
-    });
+  btnModo.addEventListener("click", () => {
+    if (document.body.style.background === "black") {
+      document.body.style.background = "";
+      document.body.style.color = "";
+      btnModo.textContent = "Dark";
+      btnModo.style.background = "#fff";
+      btnModo.style.color = "#333";
+    } else {
+      document.body.style.background = "black";
+      document.body.style.color = "white";
+      btnModo.textContent = "White";
+      btnModo.style.background = "#222";
+      btnModo.style.color = "#fff";
+    }
+  });
 
-   
-    btnModo.addEventListener("click", () => {
-      if (document.body.style.background === "black") {
-        document.body.style.background = "";
-        document.body.style.color = "";
-        btnModo.textContent = "🌙 Modo Escuro";
-      } else {
-        document.body.style.background = "black";
-        document.body.style.color = "white";
-        btnModo.textContent = "☀️ Modo Claro";
-      }
-    });
-  </script>
+  function atualizarHora() {
+    const agora = new Date();
+    document.getElementById("relogio").textContent = agora.toLocaleTimeString();
+  }
+  setInterval(atualizarHora, 1000);
+  atualizarHora();
+</script>
+
 </body>
 </html>
+
