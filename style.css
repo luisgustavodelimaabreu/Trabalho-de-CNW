@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
   color: #fff;
-  background: #fff;
+  background:  #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -84,5 +84,6 @@ body.passo5 /*=julio*/
 {
   background: linear-gradient(135deg, #000, #222);
 }
+
 
 
