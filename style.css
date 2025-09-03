@@ -73,13 +73,15 @@ footer {
 }
 
 /* ================================
-   PÁGINAS (todas iguais agora)
+   PÁGINAS
 ================================ */
 body.index,
-body.passo1,
-body.passo2,
-body.passo3,
-body.passo4,
-body.passo5 {
+body.passo1, /*=joao*/
+body.passo2, /*=loa*/
+body.passo3,/*=guilerme*/
+body.passo4,/*=luiz*/
+body.passo5 /*=julio*/
+{
   background: linear-gradient(135deg, #000, #222);
 }
+
