@@ -84,7 +84,7 @@ body.index {
 body.index main h2 { color: #48cab0; }
 
 /* ================================
-   PASSO 1 - Introdução:)
+   PASSO 1 - Introdução:) joao
 ================================ */
 body.passo1 {
   background: radial-gradient(circle, #a32f18, #210b14);
@@ -92,7 +92,7 @@ body.passo1 {
 body.passo1 main h2 { color: #967800; }
 
 /* ================================
-   PASSO 2 - Serviços
+   PASSO 2 - Serviços loa
 ================================ */
 body.passo2 {
   background: linear-gradient(135deg, #613a0b, #3e3819);
@@ -100,7 +100,7 @@ body.passo2 {
 body.passo2 main h2 { color: #5c1111; }
 
 /* ================================
-   PASSO 3 - Armazenamento
+   PASSO 3 - Armazenamento guilerme
 ================================ */
 body.passo3 {
   background: linear-gradient(135deg, #146379, #0a2f5b);
@@ -108,7 +108,7 @@ body.passo3 {
 body.passo3 main h2 { color: #191704; }
 
 /* ================================
-   PASSO 4 - Segurança
+   PASSO 4 - Segurança luiz
 ================================ */
 body.passo4 {
   background: linear-gradient(135deg, #26aba0, #1aa24e);
@@ -116,9 +116,10 @@ body.passo4 {
 body.passo4 main h2 { color: #222; }
 
 /* ================================
-   PASSO 5 - Escalabilidade
+   PASSO 5 - Escalabilidade julio
 ================================ */
 body.passo5 {
   background: linear-gradient(135deg, #30205c, #e77da9);
 }
 body.passo5 main h2 { color: #431443; }
+
