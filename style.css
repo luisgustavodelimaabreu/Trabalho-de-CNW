@@ -1,5 +1,5 @@
 /* ================================
-   ESTILOS GERAIS
+   ESTILOS GERAIS 
 ================================ */
 body {
   margin: 0;
@@ -79,39 +79,39 @@ footer {
    INDEX :)
 ================================ */
 body.index {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg, #000000, #205fcc);
 }
-body.index main h2 { color: #00ffcc; }
+body.index main h2 { color: #48cab0; }
 
 /* ================================
    PASSO 1 - Introdução:)
 ================================ */
 body.passo1 {
-  background: radial-gradient(circle, #ff512f, #dd2476);
+  background: radial-gradient(circle, #a32f18, #210b14);
 }
-body.passo1 main h2 { color: #ffe066; }
+body.passo1 main h2 { color: #967800; }
 
 /* ================================
    PASSO 2 - Serviços
 ================================ */
 body.passo2 {
-  background: linear-gradient(135deg, #f7971e, #ffd200);
+  background: linear-gradient(135deg, #613a0b, #3e3819);
 }
-body.passo2 main h2 { color: #333; }
+body.passo2 main h2 { color: #5c1111; }
 
 /* ================================
    PASSO 3 - Armazenamento
 ================================ */
 body.passo3 {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #146379, #0a2f5b);
 }
-body.passo3 main h2 { color: #ffeb3b; }
+body.passo3 main h2 { color: #191704; }
 
 /* ================================
    PASSO 4 - Segurança
 ================================ */
 body.passo4 {
-  background: linear-gradient(135deg, #11998e, #38ef7d);
+  background: linear-gradient(135deg, #26aba0, #1aa24e);
 }
 body.passo4 main h2 { color: #222; }
 
@@ -119,6 +119,6 @@ body.passo4 main h2 { color: #222; }
    PASSO 5 - Escalabilidade
 ================================ */
 body.passo5 {
-  background: linear-gradient(135deg, #654ea3, #eaafc8);
+  background: linear-gradient(135deg, #30205c, #e77da9);
 }
-body.passo5 main h2 { color: #ffddff; }
+body.passo5 main h2 { color: #431443; }
