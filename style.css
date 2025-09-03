@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  color: #fff;
+  color: #000000;
   background:  #FFFFFF;
   min-height: 100vh;
   display: flex;
@@ -25,7 +25,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.8rem;
-  color: #f0f0f0;
+  color: #000000;
 }
 
 nav ul {
@@ -38,7 +38,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #f0f0f0;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   padding: 6px 12px;
@@ -60,7 +60,7 @@ main {
 main h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #e0e0e0;
+  color: #000000;
 }
 
 footer {
@@ -69,7 +69,7 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
   margin-top: auto;
-  color: #aaa;
+  color: #000000;
 }
 
 /* ================================
