@@ -1,81 +1,124 @@
 /* ================================
-   ESTILOS DE FUNDO POR PÁGINA
+   ESTILOS GERAIS ;)
 ================================ */
-
-/* INDEX */
-body.index {
-  background: linear-gradient(-45deg, #ffffff, #eeeeee, #cccccc, #999999);
-  background-size: 400% 400%;
-  animation: gradientIndex 12s ease infinite;
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #fff;
+  background: #1a1a1a; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
-@keyframes gradientIndex {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+header {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 20px 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* PASSO 1 (João) */
-body.passo1 {
-  background: linear-gradient(-45deg, #ffecd2, #fcb69f, #ff9a9e, #fad0c4);
-  background-size: 400% 400%;
-  animation: gradientPasso1 10s ease infinite;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #f5f5f5;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-@keyframes gradientPasso1 {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* PASSO 2 (Loa) */
-body.passo2 {
-  background: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #667eea, #764ba2);
-  background-size: 400% 400%;
-  animation: gradientPasso2 15s ease infinite;
+nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-@keyframes gradientPasso2 {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
 }
 
-/* PASSO 3 (Guilherme) */
-body.passo3 {
-  background: linear-gradient(-45deg, #f6d365, #fda085, #fbc2eb, #a6c1ee);
-  background-size: 400% 400%;
-  animation: gradientPasso3 14s ease infinite;
+main {
+  padding: 130px 20px 90px;
+  flex: 1;
+  text-align: center;
 }
 
-@keyframes gradientPasso3 {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+main h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeInUp 1s ease;
 }
 
-/* PASSO 4 (Luiz) */
-body.passo4 {
-  background: linear-gradient(-45deg, #89f7fe, #66a6ff, #38ef7d, #11998e);
-  background-size: 400% 400%;
-  animation: gradientPasso4 16s ease infinite;
+footer {
+  background: rgba(255, 255, 255, 0.07);
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+  margin-top: auto;
+  color: #bbb;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
 }
 
-@keyframes gradientPasso4 {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* ================================
+   PÁGINAS
+================================ */
+body.index,
+body.passo1, /*joao*/
+body.passo2, /*loa*/
+body.passo3, /*guilerme*/
+body.passo4, /*luiz*/
+body.passo5  /*julio*/
+{
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  animation: gradientFade 8s ease infinite alternate;
 }
 
-/* PASSO 5 (Julio) */
-body.passo5 {
-  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
-  background-size: 400% 400%;
-  animation: gradientPasso5 18s ease infinite;
+/* ================================
+   ANIMAÇÕES 
+================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes gradientPasso5 {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes gradientFade {
+  from {
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  }
+  to {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+  }
 }
+
