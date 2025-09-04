@@ -1,90 +1,81 @@
 /* ================================
-   ESTILOS GERAIS 
+   ESTILOS DE FUNDO POR PÁGINA
 ================================ */
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  color: #000000;
-  background:  #FFFFFF;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+/* INDEX */
+body.index {
+  background: linear-gradient(-45deg, #ffffff, #eeeeee, #cccccc, #999999);
+  background-size: 400% 400%;
+  animation: gradientIndex 12s ease infinite;
 }
 
-header {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 15px;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(4px);
+@keyframes gradientIndex {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  color: #000000;
+/* PASSO 1 (João) */
+body.passo1 {
+  background: linear-gradient(-45deg, #ffecd2, #fcb69f, #ff9a9e, #fad0c4);
+  background-size: 400% 400%;
+  animation: gradientPasso1 10s ease infinite;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+@keyframes gradientPasso1 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-nav ul li a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+/* PASSO 2 (Loa) */
+body.passo2 {
+  background: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #667eea, #764ba2);
+  background-size: 400% 400%;
+  animation: gradientPasso2 15s ease infinite;
 }
 
-nav ul li a:hover {
-  background: #fff;
-  color: #000;
+@keyframes gradientPasso2 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-main {
-  padding: 120px 20px 80px;
-  flex: 1;
-  text-align: center;
+/* PASSO 3 (Guilherme) */
+body.passo3 {
+  background: linear-gradient(-45deg, #f6d365, #fda085, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientPasso3 14s ease infinite;
 }
 
-main h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #000000;
+@keyframes gradientPasso3 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-footer {
-  background: rgba(255, 255, 255, 0.05);
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  margin-top: auto;
-  color: #000000;
+/* PASSO 4 (Luiz) */
+body.passo4 {
+  background: linear-gradient(-45deg, #89f7fe, #66a6ff, #38ef7d, #11998e);
+  background-size: 400% 400%;
+  animation: gradientPasso4 16s ease infinite;
 }
 
-/* ================================
-   PÁGINAS
-================================ */
-body.index,
-body.passo1, /*=joao*/
-body.passo2, /*=loa*/
-body.passo3,/*=guilerme*/
-body.passo4,/*=luiz*/
-body.passo5 /*=julio*/
-{
-  background: linear-gradient(135deg, #FFFF, #222);
+@keyframes gradientPasso4 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
+/* PASSO 5 (Julio) */
+body.passo5 {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientPasso5 18s ease infinite;
+}
 
-
-
+@keyframes gradientPasso5 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
