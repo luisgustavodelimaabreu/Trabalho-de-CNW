@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="passo5">
+
+    <header>
+        <h1> Escabilidade passo4</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Escabilidade</h2>
+            <p>
+              A escalabilidade dinâmica dimensiona a capacidade do seu grupo do Auto Scaling de acordo com a ocorrência de alterações no tráfego.
+            </p>
+            <p>
+              Escalabilidade de rastreamento de metas aumente e diminua a capacidade atual do grupo com base em uma CloudWatch métrica da Amazon e em um valor alvo. Esse tipo de política funciona de modo semelhante ao seu termostato em casa. Você escolhe uma temperatura e o termostato faz o resto.
+            </p>
+            <p>
+                Escalabilidade em etapas: aumenta e diminui a capacidade atual do grupo com base em um conjunto de ajustes de escalabilidade, conhecidos como ajustes em etapas, que variam de acordo com o porte da violação do alarme.
+            </p>
+            <p>
+                Escalabilidade simples: aumenta e diminui a capacidade atual do grupo com base em um único ajuste de escalabilidade, com um período de esfriamento entre cada atividade de escalonamento
+            </p>
+            <p>
+
+Recomendamos enfaticamente que você use políticas de escala de monitoramento do destino e escolha uma métrica que mude de forma inversamente proporcional a uma mudança na capacidade do seu grupo do Auto Scaling. Portanto, se você dobrar o tamanho do seu grupo do Auto Scaling, a métrica diminuirá em 50%. Isso permite que os dados de métricas acionem com precisão eventos de escalabilidade proporcionais. Estão incluídas métricas como a utilização média da CPU ou a contagem média de solicitações por destino.
+            </p>
+            <p>
+                REFERENCIAS:https://docs.aws.amazon.com/pt_br/autoscaling/ec2/userguide/as-scale-based-on-demand.html 
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Trabalho sobre AWS | Página: Segurança</p>
+    </footer>
+
+    <script>
+    </script>
+
+</body>
+
+</html>
