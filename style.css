@@ -93,7 +93,22 @@ body.passo1, /*joao*/
 body.passo2, /*loa*/
 body.passo3, /*guilerme*/
 body.passo4, /*luiz*/
-body.passo5  /*julio*/
+body.passo5, /*julio*/
+body.passo6, /*joao*/
+body.passo7, /*joao*/
+body.passo8, /*joao*/
+body.passo9, /*loa*/
+body.passo10, /*loa*/
+body.passo11, /*loa*/
+body.passo12, /*julio*/
+body.passo13, /*julio*/
+body.passo14,
+body.passo15,
+body.passo16,
+body.passo17, /*julio*/
+body.passo18,
+body.passo19,
+body.passo20
 {
   background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
   animation: gradientFade 8s ease infinite alternate;
@@ -121,4 +136,5 @@ body.passo5  /*julio*/
     background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
   }
 }
+
 
