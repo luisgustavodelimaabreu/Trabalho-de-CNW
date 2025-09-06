@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento e Logs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="passo11">
+
+  <header>
+    <h1>Monitoramento e Logs - passo 11</h1>
+    <nav>
+      <ul>
+            <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+          
+    </nav>
+  </header>
+
+    <main>
+    
+    <p>Este passo é sobre visibilidade. Em um ambiente complexo e sem servidores, você não pode "entrar na máquina" para debugar. Você precisa de ferramentas para observar o comportamento da aplicação.</p>
+
+    <h2>1. CloudWatch</h2>
+
+    <p>O que é: O serviço central de monitoramento e observação da AWS.</p>
+    <p>Logs: Toda função Lambda, todo acesso ao API Gateway, e muitos outros serviços, geram "logs" (registros de texto) que são armazenados no CloudWatch Logs. É seu primeiro lugar para buscar quando algo dá errado.</p>
+    <p>Métricas: Números que representam o desempenho do seu sistema. Ex: Quantas vezes sua Lambda foi executada? Quantos errors ocorreram? Qual a latência do API Gateway? Você pode criar dashboards e alarmes com base nessas métricas.</p>
+    <p>Analogia: A caixa preta e os painéis de instrumentos de um avião.</p>
+
+    <h2>2. AWS X-Ray</h2>
+
+    <p>O que é: Um serviço de rastreamento distribuído. Ele ajuda você a visualizar a jornada completa de uma requisição à medida que ela percorre diversos serviços da sua arquitetura (API Gateway -> Lambda -> SQS -> outra Lambda -> DynamoDB).</p>
+    <p>Objetivo: Identificar gargalos de performance (onde a requisição está travando ou lentidão) e entender as dependências entre os serviços. Ele desenha um mapa (um trace) de como os serviços interagem para atender uma solicitação.</p>
+    <p>Analogia: Um rastreador GPS para suas requisições. Você vê exatamente qual caminho ela percorreu e quanto tempo gastou em cada ponto.</p>
+
+    <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+    </footer>
+
+    <script>
+    
+    window.onscroll = function() {
+      let btn = document.getElementById("topoBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+ 
+    document.getElementById("topoBtn").addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+
+    document.querySelectorAll("h2").forEach(h2 => {
+      h2.addEventListener("click", () => {
+        let conteudo = h2.nextElementSibling;
+        conteudo.style.display = conteudo.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+
+</html>
