@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="passo4">
+
+    <header>
+        <h1> Segurança passo - 4</h1>
+        <nav>
+            <ul>
+                 <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Importância da Segurança na Nuvem</h2>
+            <p>
+                A segurança é um dos pilares mais importantes da computação em nuvem.
+                Na AWS, ela é tratada como prioridade máxima, oferecendo ferramentas
+                que ajudam empresas e desenvolvedores a protegerem dados, aplicações
+                e infraestrutura contra acessos indevidos e falhas.
+            </p>
+            <p>
+                A plataforma trabalha com o modelo de <strong>responsabilidade compartilhada</strong>:
+                a AWS cuida da <em>segurança da nuvem</em> (infraestrutura, servidores e rede física),
+                enquanto o cliente é responsável pela <em>segurança dentro da nuvem</em>
+                (usuários, permissões, dados e configurações).
+            </p>
+        </section>
+
+        <section>
+            <h2>Recursos de Segurança Oferecidos pela AWS</h2>
+            <ul>
+                <li><strong>IAM (Identity and Access Management):</strong> gerenciamento de usuários, grupos e
+                    permissões.</li>
+                <li><strong>Criptografia:</strong> proteção de dados em repouso e em trânsito.</li>
+                <li><strong>Security Groups e Firewalls:</strong> controle de tráfego de rede.</li>
+                <li><strong>CloudTrail e CloudWatch:</strong> monitoramento e auditoria de atividades.</li>
+                <li><strong>Conformidade:</strong> certificações como ISO, GDPR e HIPAA.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Boas Práticas de Segurança</h2>
+            <p>
+                Para garantir o uso seguro dos serviços da AWS, recomenda-se aplicar práticas essenciais, como:
+            </p>
+            <ol>
+                <li>Habilitar autenticação multifator (MFA) nas contas críticas.</li>
+                <li>Aplicar o princípio do menor privilégio, concedendo apenas o necessário.</li>
+                <li>Manter auditorias e registros de atividades sempre ativos.</li>
+                <li>Criptografar dados sensíveis armazenados e transmitidos.</li>
+                <li>Configurar alarmes para identificar acessos suspeitos.</li>
+            </ol>
+        </section>
+
+
+        <section>
+            <h2>Exemplo Prático</h2>
+            <p>
+                Imagine uma empresa que armazena informações de clientes no Amazon S3.
+                Para proteger esses dados, ela pode ativar a criptografia automática,
+                restringir acessos usando políticas de IAM e acompanhar o uso dos buckets
+                através do CloudTrail. Essa combinação de medidas aumenta a proteção e
+                reduz riscos de incidentes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Teste Interativo</h2>
+            <p>Digite uma senha para verificar se ela é forte o suficiente:</p>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+            <button onclick="verificarSenha()">Verificar</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Trabalho sobre AWS | Página: Segurança</p>
+    </footer>
+
+    <script>
+        function verificarSenha() {
+            let senha = document.getElementById("senha").value;
+            let resultado = document.getElementById("resultado");
+
+            if (senha.length < 6) {
+                resultado.textContent = "Senha fraca: deve ter pelo menos 6 caracteres.";
+                resultado.style.color = "red";
+            } else if (!/[A-Z]/.test(senha) || !/[0-9]/.test(senha)) {
+                resultado.textContent = "Senha média: adicione números e letras maiúsculas.";
+                resultado.style.color = "orange";
+            } else {
+                resultado.textContent = "Senha forte!";
+                resultado.style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

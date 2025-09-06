@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="passo3">
+
+  <header>
+    <h1> Armazenamentos - passo 3</h1>
+    <nav>
+      <ul>
+           <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+      </ul>
+    </nav>
+  </header>
+  <H1>Armazenamentos e suas funções</H1>
+Os armazenamentos da AWS funcionam de várias formas, sendo o Amazon S3 (Simple Storage Service) o mais comum, onde dados são armazenados como objetos em "buckets", proporcionando escalabilidade praticamente ilimitada, alta durabilidade e segurança. 
+A AWS também oferece soluções para outros tipos de dados, como Amazon Glacier para arquivamento de baixo custo, e serviços para **armazenamento de arquivos e bancos de dados, utilizando infraestrutura global distribuída em data centers para garantir disponibilidade e resiliência. 
+  <h2>Funcionamento do Amazon S3 (armazenamento de objetos)<br>
+Objetos e Buckets:
+  </h2>
+  
+O S3 armazena dados como objetos (um arquivo mais seus metadados) dentro de contêineres chamados buckets.
+  <br> 
+  <br>
+  
+  <h2>Chaves de Objeto:</h2>
+Cada objeto tem uma chave, que é o nome exclusivo que o identifica dentro do bucket. 
+  <br>
+  <br>
+  <h2>Escalabilidade e Durabilidade:<br></h2>
+O S3 oferece escalabilidade praticamente ilimitada e alta durabilidade (99,999999999%) ao distribuir dados em várias unidades de disco físicas e até mesmo em diferentes zonas de disponibilidade, utilizando hardware e software especializado. 
+  <br>
+  <br>
+  <h2>Versionamento:</h2>
+É possível ativar o versionamento para manter múltiplas versões de um objeto, facilitando a restauração de dados acidentais. 
+  <br>
+  <br>
+  <h2>Acesso e Permissões:</h2>
+O acesso aos buckets e objetos é privado, sendo controlado por políticas do IAM, políticas de bucket e listas de controle de acesso (ACLs). 
+  <br>
+  <br>
+  <br>
+  <h2>
+Outras Soluções de Armazenamento na AWS
+  <br>
+    Amazon Glacier:
+  </h2>
+Para arquivamento de dados com custo otimizado, oferecendo diferentes opções para acesso e duração do armazenamento. 
+  <br>
+  <br>
+  <h2>Serviços de Arquivos:</h2>
+A AWS oferece soluções para armazenamento de arquivos, ideais para retenção de longo prazo e conformidade. 
+  <br>
+  <br>
+  <h2>Armazenamento Híbrido:</h2>
+O AWS Storage Gateway permite conectar ambientes locais com o armazenamento da AWS para backups e acesso a dados. 
+  <br>
+  <br>
+  <h2>  Data Lakes:</h2>
+O S3 é a base para criar data lakes devido à sua escalabilidade e durabilidade, sendo ideal para armazenar grandes volumes de dados não estruturados. 
+
+  <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+  </footer>
+
+
+  <button id="modo">🌙 Modo Escuro</button>
+
+  <script>
+    const btnModo = document.getElementById("modo");
+
+
+    btnModo.style.position = "fixed";
+    btnModo.style.bottom = "20px";
+    btnModo.style.right = "20px";
+    btnModo.style.padding = "12px 18px";
+    btnModo.style.border = "none";
+    btnModo.style.borderRadius = "8px";
+    btnModo.style.background = "linear-gradient(45deg, #4b6cb7, #182848)";
+    btnModo.style.color = "white";
+    btnModo.style.fontSize = "16px";
+    btnModo.style.cursor = "pointer";
+    btnModo.style.boxShadow = "0 4px 6px rgba(0,0,0,0.3)";
+    btnModo.style.transition = "all 0.3s ease";
+    btnModo.style.zIndex = "1000";
+
+    btnModo.addEventListener("mouseover", () => {
+      btnModo.style.transform = "scale(1.1)";
+      btnModo.style.boxShadow = "0 6px 8px rgba(0,0,0,0.4)";
+    });
+
+    btnModo.addEventListener("mouseout", () => {
+      btnModo.style.transform = "scale(1)";
+      btnModo.style.boxShadow = "0 4px 6px rgba(0,0,0,0.3)";
+    });
+
+   
+    btnModo.addEventListener("click", () => {
+      if (document.body.style.background === "black") {
+        document.body.style.background = "";
+        document.body.style.color = "";
+        btnModo.textContent = "🌙 Modo Escuro";
+      } else {
+        document.body.style.background = "black";
+        document.body.style.color = "white";
+        btnModo.textContent = "☀️ Modo Claro";
+      }
+    });
+  </script>
+</body>
+</html>

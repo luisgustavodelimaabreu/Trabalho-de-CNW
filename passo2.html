@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Principais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="passo2">
+
+  <header>
+    <h1> Serviços Principais - passo 2</h1>
+    <nav>
+      <ul>
+            <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+          
+    </nav>
+  </header>
+
+    <main>
+    <h2>1. Computação: Serviços usados para executar o código principal da sua aplicação.</h2>
+
+    <p>Amazon EC2 (Elastic Compute Cloud): São servidores virtuais na nuvem, onde se tem controle total sobre o sistema operacional e o software instalado. É o principal serviço para hospedar aplicações.</p>
+    <p>AWS Lambda: Computação sem servidor (Serverless). Executa código sem precisar provisionar ou gerenciar servadores, pagando apenas pelo tempo de execução do código. Ideal para tarefas event-driven, como processar uploads de arquivos ou APIs.</p>
+    <p>Amazon Lightsail: Serviço simplificado para iniciantes, oferecendo planos pré-configurados que incluem VM, armazenamento e banco de dados por um preço fixo. Ideal para projetos pequenos, sites WordPress ou blogs.</p>
+    <p>AWS Elastic Beanstalk: Um PaaS (Platform as a Service). Você faz o upload do seu código e o serviço se encarrega automaticamente do provisionamento, balanceamento de carga e escalonamento. Ótimo para desenvolvedores que não querem se preocupar com a infraestrutura subjacente.</p>
+
+    <h2>2. Armazenamento: Serviços para armazenar dados de forma segura, durável e escalável.</h2>
+
+    <p>Amazon S3 (Simple Storage Service): Armazenamento de objetos altamente escalável e durável. Ideal para armazenar qualquer tipo de dado estático: imagens, vídeos, backups, arquivos de log, e até para hospedar sites estáticos.</p>
+    <p>Amazon EBS (Elastic Block Store): Discos de armazenamento em bloco para serem anexados às instâncias EC2. Funciona como um HD virtual para seu servidor. Necessário para armazenar o sistema operacional, bancos de dados e aplicações que requerem sistema de arquivos.</p>
+    <p>Amazon EFS (Elastic File System): Sistema de arquivos compartilhado e elástico para uso com instâncias EC2. Várias VMs podem acessar o mesmo sistema de arquivos simultaneamente, ideal para workloads como CMS ou diretórios compartilhados.</p>
+    <p>Amazon Glacier / S3 Glacier: Serviço de armazenamento para arquivamento e backup de longo prazo. Extremamente barato, mas com tempos de recuperação mais longos. Perfeito para dados que raramente são acessados, mas devem ser guardados por anos (e.g., conformidade legal).</p>
+    
+    <h2>3. Bancos de Dados: Oferecem opções para diferentes necessidades de dados.</h2>
+
+    <p>Amazon RDS (Relational Database Service): Facilita a configuração, operação e escalonamento de bancos de dados relacionais na nuvem. Suporta motores como PostgreSQL, MySQL, MariaDB, Oracle, e SQL Server. Cuida de backups, patches e replicação.</p>
+    <p>Amazon DynamoDB: Banco de dados NoSQL totalmente gerenciado, rápido e flexível. Oferece baixa latência de milissegundos em qualquer escala. Ideal para aplicações que precisam de alto desempenho e escalonamento automático, como carrinhos de compra, jogos e IoT.</p>
+    <p>Amazon Aurora: Banco de dados relacional de alto desempenho compatível com MySQL e PostgreSQL. Oferece a velocidade e confiabilidade de bancos enterprise, mas com a simplicidade e custo-effectiveness de bancos de dados open-source. É a "jóia da coroa" dos bancos de dados da AWS.</p>
+    <p>Amazon Redshift: Serviço de data warehouse (armazém de dados) em escala de petabytes. Projetado para análises e Business Intelligence (BI), permitindo executar consultas complexas em grandes volumes de dados.</p>
+
+    <h2>4. Rede e Entrega de Conteúdo: Serviços para conectar recursos e entregar conteúdo com baixa latência.</h2>
+
+    <p>Amazon VPC (Virtual Private Cloud): Permite que você provisione uma seção isolada e logicamente separada da nuvem AWS. Você tem controle total sobre o ambiente de rede virtual, incluindo IPs, sub-redes, rotas e gateways. É a base de rede para a maioria dos seus recursos.</p>
+    <p>Amazon Route 53: Serviço de DNS (Sistema de Nomes de Domínio) altamente disponível e escalável. Traduz nomes de domínio (como www.meusite.com) em endereços IP e também gerencia o roteamento de tráfego.</p>
+    <p>AWS CloudFront: Rede de Entrega de Conteúdo (CDN - Content Delivery Network). Distribui conteúdo estático e dinâmico (e.g., site, vídeos, APIs) globalmente através de uma rede de edge locations (pontos de presença), reduzindo a latência e melhorando a velocidade para usuários finais.</p>
+    <p>Elastic Load Balancing (ELB): Distribui automaticamente o tráfego de entrada da aplicação entre múltiplos alvos (e.g., instâncias EC2, containers), aumentando a disponibilidade e tolerância a falhas da sua aplicação.</p>
+
+    <h2>5. Segurança, Identidade e Conformidade: Serviços para controlar quem pode fazer o quê em sua nuvem.</h2>
+
+    <p>AWS IAM (Identity and Access Management): Serviço fundamental para gerenciar acesso aos serviços e recursos da AWS de forma segura. Você cria e gerencia usuários, grupos e permissões para controlar quem pode acessar o quê.</p>
+    <p>AWS KMS (Key Management Service): Facilita a criação e o controle de chaves de criptografia usadas para criptografar seus dados.</p>
+    <p>AWS WAF (Web Application Firewall): Protege suas aplicações web de exploits e vulnerabilidades comuns na web, como SQL injection e Cross-Site Scripting (XSS).</p>
+
+    <h2>6. Monitoramento e Governança: Serviços para obter visibilidade e controlar seus recursos.</h2>
+
+    <p>Amazon CloudWatch: Serviço de monitoramento e observabilidade para recursos e aplicações AWS. Coleta métricas, logs e eventos, permitindo configurar alarmes e visualizar dados de performance.</p>
+    <p>AWS CloudTrail: Rastreia e registra toda a atividade de chamadas de API em sua conta AWS. É essencial para auditoria de segurança, conformidade e troubleshooting de ações realizadas em sua conta.</p>
+
+    <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+    </footer>
+
+    <script>
+    
+    window.onscroll = function() {
+      let btn = document.getElementById("topoBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+ 
+    document.getElementById("topoBtn").addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+
+    document.querySelectorAll("h2").forEach(h2 => {
+      h2.addEventListener("click", () => {
+        let conteudo = h2.nextElementSibling;
+        conteudo.style.display = conteudo.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+

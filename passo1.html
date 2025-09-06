@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS - Passo 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="passo1">
+  <header>
+    <h1>AWS-Passo 1</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>🔍 Introdução à AWS</h2>
+    <p>A Amazon Web Services (AWS) é a plataforma de computação em nuvem da Amazon, criada em 2006, 
+      que revolucionou a forma como empresas e desenvolvedores acessam infraestrutura de TI. 
+      Em vez de manter servidores físicos caros e difíceis de escalar, a AWS 
+      oferece recursos de forma virtualizada, sob demanda, permitindo que os usuários paguem 
+      apenas pelo que realmente utilizam.
+    </p>
+    <p>
+      A plataforma disponibiliza centenas de serviços que cobrem praticamente todas 
+      as necessidades de tecnologia: computação (EC2), armazenamento (S3), bancos de dados (RDS, DynamoDB), 
+      redes, inteligência artificial, machine learning, internet das coisas (IoT), big data, segurança e muito mais.
+       Essa diversidade possibilita que desde startups até grandes corporações construam, 
+      implantem e gerenciem aplicações de maneira ágil e eficiente.
+    </p>
+    <p>
+      Outro ponto central é a escalabilidade, já que os recursos podem ser aumentados ou reduzidos rapidamente 
+      conforme a demanda, além da alta disponibilidade, garantida pela rede
+       global de data centers da Amazon espalhados em várias regiões do mundo.
+    </p>
+    <p>
+    Por esses motivos, a AWS se consolidou como líder de mercado em computação em nuvem, sendo utilizada 
+    por milhões de empresas e profissionais para reduzir custos, 
+    aumentar a inovação e acelerar a transformação digital.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+  </footer>
+
+
+<button id="modo">Dark</button>
+<div id="relogio" style="margin:20px; font-size:18px;"></div>
+
+<script>
+  const btnModo = document.getElementById("modo");
+
+  btnModo.style.position = "fixed";
+  btnModo.style.bottom = "20px";
+  btnModo.style.right = "20px";
+  btnModo.style.padding = "10px 16px";
+  btnModo.style.border = "1px solid #ccc";
+  btnModo.style.borderRadius = "6px";
+  btnModo.style.background = "#fff";
+  btnModo.style.color = "#333";
+  btnModo.style.fontSize = "15px";
+  btnModo.style.cursor = "pointer";
+  btnModo.style.transition = "all 0.2s ease";
+  btnModo.style.zIndex = "1000";
+
+  btnModo.addEventListener("mouseover", () => {
+    btnModo.style.background = "#f0f0f0";
+  });
+
+  btnModo.addEventListener("mouseout", () => {
+    btnModo.style.background = "#fff";
+  });
+
+  btnModo.addEventListener("click", () => {
+    if (document.body.style.background === "black") {
+      document.body.style.background = "";
+      document.body.style.color = "";
+      btnModo.textContent = "Dark";
+      btnModo.style.background = "#fff";
+      btnModo.style.color = "#333";
+    } else {
+      document.body.style.background = "black";
+      document.body.style.color = "white";
+      btnModo.textContent = "White";
+      btnModo.style.background = "#222";
+      btnModo.style.color = "#fff";
+    }
+  });
+
+  function atualizarHora() {
+    const agora = new Date();
+    document.getElementById("relogio").textContent = agora.toLocaleTimeString();
+  }
+  setInterval(atualizarHora, 1000);
+  atualizarHora();
+</script>
+
+</body>
+</html>
+
+
