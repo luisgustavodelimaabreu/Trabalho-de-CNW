@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverless</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="passo10">
+
+  <header>
+    <h1>Serverless - passo 10</h1>
+    <nav>
+      <ul>
+            <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+          
+    </nav>
+  </header>
+
+    <main>
+
+    <p>Este passo é sobre a execução da sua lógica de negócio sem se preocupar com servidores. Você se concentra apenas no código.</p>
+
+    <h2>1. AWS Lambda</h2>
+
+    <p>O que é: Computação serverless. Você escreve uma função em uma linguagem (Python, Node.js, Java, etc.) e a AWS a executa sob demanda, escalando automaticamente e você paga apenas pelo tempo de computação usado.</p>
+    <p>Analogia: Um chef sob demanda. Você não contrata um chef em tempo integral. Você só chama ele (e paga) quando tem um prato para ser preparado (um evento para processar). Ele some quando termina.</p>
+    <p>Como se integra: A Lambda é a consumidora dos serviços do Passo 9. Ela é acionada por mensagens de uma fila SQS, por notificações de um tópico SNS, por regras do EventBridge, e muitas outras coisas.</p>
+
+    <h2>2. API Gateway</h2>
+
+    <p>O que é: Um serviço para criar, publicar e gerenciar APIs RESTful e WebSocket.</p>
+    <p>Analogia: O porteiro de um prédio comercial. Ele recebe todas as visitas (requisições HTTP), verifica se elas têm autorização (autenticação), descobre para qual escritório (Lambda function) a pessoa quer ir e a direciona.</p>
+    <p>Como se integra: O API Gateway é a porta de entrada para suas Lambdas a partir do mundo exterior (web, mobile apps). Ele recebe uma requisição HTTP e a transforma em um evento para disparar uma função Lambda.</p>
+    
+
+    <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+    </footer>
+
+    <script>
+    
+    window.onscroll = function() {
+      let btn = document.getElementById("topoBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+ 
+    document.getElementById("topoBtn").addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+
+    document.querySelectorAll("h2").forEach(h2 => {
+      h2.addEventListener("click", () => {
+        let conteudo = h2.nextElementSibling;
+        conteudo.style.display = conteudo.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+
+</html>
