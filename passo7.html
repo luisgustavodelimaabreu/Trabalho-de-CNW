@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS - Passo 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="passo7">
+  <header>
+    <h1>AWS-Passo 7</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="passo1.html">Passo 1</a></li>
+        <li><a href="passo2.html">Passo 2</a></li>
+        <li><a href="passo3.html">Passo 3</a></li>
+        <li><a href="passo4.html">Passo 4</a></li>
+        <li><a href="passo5.html">Passo 5</a></li>
+        <li><a href="passo6.html">Passo 6</a></li>
+        <li><a href="passo7.html">Passo 7</a></li>
+        <li><a href="passo8.html">Passo 8</a></li>
+        <li><a href="passo9.html">Passo 9</a></li>
+        <li><a href="passo10.html">Passo 10</a></li>
+        <li><a href="passo11.html">Passo 11</a></li>
+        <li><a href="passo12.html">Passo 12</a></li>
+        <li><a href="passo13.html">Passo 13</a></li>
+        <li><a href="passo14.html">Passo 14</a></li>
+        <li><a href="passo15.html">Passo 15</a></li>
+        <li><a href="passo16.html">Passo 16</a></li>
+        <li><a href="passo17.html">Passo 17</a></li>
+        <li><a href="passo18.html">Passo 18</a></li>
+        <li><a href="passo19.html">Passo 19</a></li>
+        <li><a href="passo20.html">Passo 20</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Computação na Nuvem (EC2, Lightsail e mais)</h2>
+
+    <p>A computação em nuvem oferece a flexibilidade e o poder
+      necessários para rodar aplicações de qualquer porte,
+      desde pequenos sites até sistemas empresariais complexos.
+      A Amazon Web Services (AWS) disponibiliza diversos serviços
+      que permitem criar, gerenciar e escalar servidores de forma simples e segura.
+    </p>
+
+    <p>
+      <img src="imgs/ico1.webp" 
+           alt="EC2" class="icons_serviços">
+      <b>Amazon EC2 (Elastic Compute Cloud):</b>
+      ideal para quem precisa de maior controle. Você pode configurar
+      máquinas virtuais sob medida, com escolha de sistema operacional,
+      processador, memória e armazenamento. É a solução perfeita para aplicações
+      que exigem alto desempenho e personalização.<b>Clique na img para ver o icon em tela cheia</b>
+    </p>
+
+    <p>
+      <img src="img/ico2.png" 
+           alt="Lightsail" class="icons_serviços">
+      <b>Amazon Lightsail:</b>
+      pensado para quem busca praticidade.
+      Ele oferece instâncias pré-configuradas com preços previsíveis,
+      facilitando a hospedagem de sites, blogs, aplicações web e bancos de dados sem complicação.<b>Clique na img para ver a icon em tela cheia</b>
+    </p>
+
+    <p>
+      <img src="img/ico3.webp" 
+           alt="AWS Lambda" class="icons_serviços">
+      <b>AWS Lambda:</b>
+      Modelo de computação serverless.
+      Você executa código sem se preocupar em configurar ou administrar servidores,
+      suporta várias linguagens (Python, Node.js, Java, Go, C# e mais).
+      Ótimo para processar eventos em tempo real, como uploads em S3, mensagens em filas ou chamadas de API,
+      cobrança apenas pelo tempo de execução do código (em milissegundos).<b>Clique na img para ver a icon em tela cheia</b>
+    </p>
+
+
+    <p>
+      <img src="img/ico4.webp" 
+           alt="Elastic Beanstalk" class="icons_serviços">
+      <b>AWS Elastic Beanstalk:</b>
+      Serviço PaaS (Platform as a Service) que facilita a implantação de aplicações web,
+      suporta linguagens como PHP, Python, Node.js, Ruby, Java, .NET e Go.
+      Automatiza tarefas como provisionamento de instâncias EC2, balanceamento de carga, escalabilidade e monitoramento.
+      Perfeito para desenvolvedores que querem focar no código sem lidar com a infraestrutura.<b>Clique na img para ver a icon em tela cheia</b>
+    </p>
+   
+
+    <p>
+      Esses são alguns dos principais serviços de computação em nuvem da AWS,
+      projetados para atender desde aplicações simples até sistemas corporativos de grande porte,
+      oferecendo flexibilidade, escalabilidade e alto desempenho.
+    </p>
+  </main>
+
+
+
+  <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+  </footer>
+
+ 
+  <script>
+
+   
+    function atualizarHora() {
+      const agora = new Date();
+      document.getElementById("relogio").textContent = agora.toLocaleTimeString();
+    }
+    setInterval(atualizarHora, 1000);
+    atualizarHora();
+
+ 
+    const modal = document.createElement('div');
+    modal.id = 'modal_da_Imagem';
+    modal.style.display = 'none';
+    modal.style.position = 'fixed';
+    modal.style.zIndex = '2000';
+    modal.style.left = '0';
+    modal.style.top = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.background = 'rgba(0,0,0,0.95)';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+
+    const modalImg = document.createElement('img');
+    modal.appendChild(modalImg);
+
+    const fechar = document.createElement('span');
+    fechar.innerHTML = '&times;';
+    fechar.style.position = 'absolute';
+    fechar.style.top = '20px';
+    fechar.style.right = '40px';
+    fechar.style.fontSize = '50px';
+    fechar.style.color = 'white';
+    fechar.style.cursor = 'pointer';
+    fechar.style.fontWeight = 'bold';
+    fechar.addEventListener('mouseover', () => { fechar.style.color = '#ff5555'; });
+    fechar.addEventListener('mouseout', () => { fechar.style.color = 'white'; });
+    fechar.onclick = () => { modal.style.display = 'none'; };
+
+    modal.appendChild(fechar);
+    document.body.appendChild(modal);
+
+    const imagensServicos = document.querySelectorAll('.icons_serviços');
+    imagensServicos.forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        modalImg.src = img.src;
+        modal.style.display = 'flex';
+      });
+    });
+  </script>
+</body>
+</html>
