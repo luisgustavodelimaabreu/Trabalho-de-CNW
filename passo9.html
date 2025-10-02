@@ -1,0 +1,188 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="passo9">
+
+  <header>
+    <h1>Integração de Serviços - passo 9</h1>
+    <nav>
+      <ul>
+            <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+          
+    </nav>
+  </header>
+
+    <main>
+
+    <p>Este passo é sobre comunicação entre serviços. Em aplicações distribuídas, os componentes não se comunicam diretamente, mas através de serviços "intermediários" que garantem confiabilidade, desacoplamento e escalabilidade.</p>
+
+    <h2>1. SQS (Simple Queue Service)</h2>
+
+    <p>O que é: Uma fila de mensagens ponto a ponto. Um serviço envia uma mensagem para a fila e um consumidor (ex: Lambda) a retira para processamento.</p>
+    <p>Analogia: Uma fila de pedidos em um restaurante. Os garçons (produtores) colocam os pedidos na cozinha (fila). Os chefs (consumidores) pegam o próximo pedido para preparar.</p>
+    <p>Objetivo: Desacoplamento e garantia de processamento. Se o consumidor cair, as mensagens permanecem na fila até que ele volte. Permite também equilibrar a carga de trabalho.</p>
+
+    <h2>2. SNS (Simple Notification Service)</h2>
+
+    <p>O que é: Um serviço de publicação/assinatura (pub/sub). Um publicador envia uma mensagem para um "tópico", e o SNS a distribui instantaneamente para todos os serviços inscritos (assinantes) naquele tópico.</p>
+    <p>Analogia: Um canal de newsletter. Você se inscreve (assina) em um canal de "Promoções". Quando uma nova promoção é publicada, todos os inscritos recebem uma cópia no seu email/SMS.</p>
+    <p>Objetivo: Broadcast de eventos para múltiplos consumidores simultaneamente. Ex: Um pedido foi feito -> notificar o sistema de logística, o sistema de marketing (e-mail de confirmação) e o financeiro.</p>
+    
+    <h2>3. EventBridge</h2>
+
+    <p>O que é: Um "barramento de eventos" que permite conectar dados de aplicações da AWS, de SaaS e suas próprias apps com base em eventos.</p>
+    <p>Analogia: O sistema nervoso central. Ele recebe estímulos (eventos) de todos os lugares, interpreta ("ah, isso foi um pedido cancelado") e decide qual ação tomar ("avise o time de suporte").</p>
+    <p>Objetivo: Orquestrar respostas a eventos em toda a sua arquitetura. É mais poderoso e flexível que o SNS, permitindo regras complexas para filtrar eventos e roteá-los para mais de 100 destinos diferentes na AWS.</p>
+    
+    <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+    </footer>
+
+    <script>
+    
+    window.onscroll = function() {
+      let btn = document.getElementById("topoBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+ 
+    document.getElementById("topoBtn").addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+
+    document.querySelectorAll("h2").forEach(h2 => {
+      h2.addEventListener("click", () => {
+        let conteudo = h2.nextElementSibling;
+        conteudo.style.display = conteudo.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="passo9">
+
+  <header>
+    <h1>Integração de Serviços - passo 9</h1>
+    <nav>
+      <ul>
+            <li><a href="index.html">index</a></li>
+         <li><a href="passo1.html">Passo 1</a></li>
+                <li><a href="passo2.html">Passo 2</a></li>
+                <li><a href="passo3.html">Passo 3</a></li>
+                <li><a href="passo4.html">Passo 4</a></li>
+                <li><a href="passo5.html">Passo 5</a></li>
+                <li><a href="passo6.html">Passo 6</a></li>
+                <li><a href="passo7.html">Passo 7</a></li>
+                <li><a href="passo8.html">Passo 8</a></li>
+                <li><a href="passo9.html">Passo 9</a></li>
+                <li><a href="passo10.html">Passo 10</a></li> 
+                <li><a href="passo11.html">Passo 11</a></li>
+                <li><a href="passo12.html">Passo 12</a></li>
+                <li><a href="passo13.html">Passo 13</a></li>
+                <li><a href="passo14.html">Passo 14</a></li>
+                <li><a href="passo15.html">Passo 15</a></li>
+                <li><a href="passo16.html">Passo 16</a></li>
+                <li><a href="passo17.html">Passo 17</a></li>
+                <li><a href="passo18.html">Passo 18</a></li>
+                <li><a href="passo19.html">Passo 19</a></li>
+                <li><a href="passo20.html">Passo 20</a></li>
+          
+    </nav>
+  </header>
+
+    <main>
+
+    <p>Este passo é sobre comunicação entre serviços. Em aplicações distribuídas, os componentes não se comunicam diretamente, mas através de serviços "intermediários" que garantem confiabilidade, desacoplamento e escalabilidade.</p>
+
+    <h2>1. SQS (Simple Queue Service)</h2>
+
+    <p>O que é: Uma fila de mensagens ponto a ponto. Um serviço envia uma mensagem para a fila e um consumidor (ex: Lambda) a retira para processamento.</p>
+    <p>Analogia: Uma fila de pedidos em um restaurante. Os garçons (produtores) colocam os pedidos na cozinha (fila). Os chefs (consumidores) pegam o próximo pedido para preparar.</p>
+    <p>Objetivo: Desacoplamento e garantia de processamento. Se o consumidor cair, as mensagens permanecem na fila até que ele volte. Permite também equilibrar a carga de trabalho.</p>
+
+    <h2>2. SNS (Simple Notification Service)</h2>
+
+    <p>O que é: Um serviço de publicação/assinatura (pub/sub). Um publicador envia uma mensagem para um "tópico", e o SNS a distribui instantaneamente para todos os serviços inscritos (assinantes) naquele tópico.</p>
+    <p>Analogia: Um canal de newsletter. Você se inscreve (assina) em um canal de "Promoções". Quando uma nova promoção é publicada, todos os inscritos recebem uma cópia no seu email/SMS.</p>
+    <p>Objetivo: Broadcast de eventos para múltiplos consumidores simultaneamente. Ex: Um pedido foi feito -> notificar o sistema de logística, o sistema de marketing (e-mail de confirmação) e o financeiro.</p>
+    
+    <h2>3. EventBridge</h2>
+
+    <p>O que é: Um "barramento de eventos" que permite conectar dados de aplicações da AWS, de SaaS e suas próprias apps com base em eventos.</p>
+    <p>Analogia: O sistema nervoso central. Ele recebe estímulos (eventos) de todos os lugares, interpreta ("ah, isso foi um pedido cancelado") e decide qual ação tomar ("avise o time de suporte").</p>
+    <p>Objetivo: Orquestrar respostas a eventos em toda a sua arquitetura. É mais poderoso e flexível que o SNS, permitindo regras complexas para filtrar eventos e roteá-los para mais de 100 destinos diferentes na AWS.</p>
+    
+    <footer>
+    <p>&copy; 2025 - Pesquisa AWS</p>
+    </footer>
+
+    <script>
+    
+    window.onscroll = function() {
+      let btn = document.getElementById("topoBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+ 
+    document.getElementById("topoBtn").addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+
+    document.querySelectorAll("h2").forEach(h2 => {
+      h2.addEventListener("click", () => {
+        let conteudo = h2.nextElementSibling;
+        conteudo.style.display = conteudo.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+
+>>>>>>> 6ee6581247e50d8cb0ee12c60c23c5af3f331a9a
+</html>
